@@ -13,7 +13,7 @@
           ];
         };
         #defines aarch64-linux system
-        aarch64-linux = nixpkgs.lib.nixosSystem {
+        aarch64 = nixpkgs.lib.nixosSystem {
           system = "aarch64-linux";
           modules = [
             ./configuration.nix
