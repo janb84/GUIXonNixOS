@@ -7,7 +7,7 @@
     (modulesPath + "/profiles/qemu-guest.nix")
   ];
 
-  boot.initrd.availableKernelModules = [ "xchi_pci" "sr_mod" ];
+  boot.initrd.availableKernelModules = [ "sr_mod" ];
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
 
