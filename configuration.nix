@@ -41,6 +41,19 @@
     clang
 	];
 
+  nix = {
+    package = pkgs.nixStable;
+
+    settings = {
+      # Nix automatically detects files in the store that have identical contents,
+      # and replaces them with hard links to a single copy. This saves disk space
+      auto-optimise-store = true;
+      # Enable flakes
+      experimental-features = "nix-command flakes";
+    };
+
+  };
+
   #nixos channel version
   system.stateVersion = "24.11";
 }
