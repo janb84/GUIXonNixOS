@@ -42,7 +42,6 @@
 	];
 
   nix = {
-    package = pkgs.nixStable;
 
     settings = {
       # Nix automatically detects files in the store that have identical contents,
