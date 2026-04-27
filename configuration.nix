@@ -54,6 +54,6 @@
   };
 
   #nixos channel version
-  system.stateVersion = "unstable";
+  #system.stateVersion = "26.05";
 }
 
