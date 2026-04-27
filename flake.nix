@@ -1,7 +1,7 @@
 {
   description = "A flake for NixOS for GUIX";
 
-  inputs.nixpkgs.url = github:NixOS/nixpkgs/unstable;
+  inputs.nixpkgs.url = github:NixOS/nixpkgs/nixos-unstable;
 
   outputs = { self, nixpkgs }: {
       nixosConfigurations = {
